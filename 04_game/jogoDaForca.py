@@ -55,5 +55,9 @@ def game():
             chance -= 1;
             wrongLetters.append(tried);
 
+        if "_" not in letters:
+            print("\n Você venceu!, a palavra era: ", word);
+            break;
+
 if __name__ == "__main__":
     game()
